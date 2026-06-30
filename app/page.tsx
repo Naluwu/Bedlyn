@@ -141,9 +141,18 @@ export default function Home() {
                 UGX 120,000
               </p>
 
-              <button className="mt-4 bg-[#0F766E] text-white px-5 py-2 rounded">
-                Add to Cart
-              </button>
+              <button
+  onClick={() =>
+    addToCart({
+      id: 1,
+      name: "Luxury Bedsheets",
+      price: 120000,
+    })
+  }
+  className="mt-4 bg-[#0F766E] text-white px-5 py-2 rounded"
+>
+  Add to Cart
+</button>
             </div>
           </div>
 
@@ -167,9 +176,18 @@ export default function Home() {
                 UGX 250,000
               </p>
 
-              <button className="mt-4 bg-[#0F766E] text-white px-5 py-2 rounded">
-                Add to Cart
-              </button>
+              <button
+  onClick={() =>
+    addToCart({
+      id: 2,
+      name: "Premium Duvet Set",
+      price: 250000,
+    })
+  }
+  className="mt-4 bg-[#0F766E] text-white px-5 py-2 rounded"
+>
+  Add to Cart
+</button>
             </div>
           </div>
 
@@ -182,7 +200,7 @@ export default function Home() {
 
             <div className="p-6">
               <h3 className="text-2xl font-semibold">
-                Hotel Pillows
+                Hotel Bedsheets
               </h3>
 
               <p className="mt-3">
@@ -193,9 +211,18 @@ export default function Home() {
                 UGX 80,000
               </p>
 
-              <button className="mt-4 bg-[#0F766E] text-white px-5 py-2 rounded">
-                Add to Cart
-              </button>
+              <button
+  onClick={() =>
+    addToCart({
+      id: 3,
+      name: "Hotel Pillows",
+      price: 80000,
+    })
+  }
+  className="mt-4 bg-[#0F766E] text-white px-5 py-2 rounded"
+>
+  Add to Cart
+</button>
             </div>
           </div>
 
