@@ -22,20 +22,28 @@ export default function Home() {
 
   return (
     <main className="bg-white text-gray-900">
-
+<div className="bg-[#D4AF37] text-black text-center py-2 text-sm font-medium">
+  ✨ Transform Your Bedroom Into a Luxury Hotel Experience
+</div>
       {/* Navbar */}
       <nav className="flex justify-between items-center px-8 py-6 border-b bg-[#0F766E] text-white">
-        <h1 className="text-3xl font-bold text-[#D4AF37]">
-          BEDLYN
-        </h1>
+        <div>
+  <h1 className="text-3xl font-bold text-[#D4AF37]">
+    BEDLYN
+  </h1>
+
+  <p className="text-xs text-white">
+    Luxury Bedding & Home Essentials
+  </p>
+</div>
 
         <div className="flex gap-8">
-          <a href="#">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">Bundles</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </div>
+  <a href="#">Home</a>
+  <a href="#">Shop</a>
+  <a href="#">Bedroom Packages</a>
+  <a href="#">Hotel Collection</a>
+  <a href="#">Contact</a>
+</div>
       </nav>
 
       {/* Hero */}
