@@ -48,6 +48,7 @@ export default function Home() {
 
       {/* Hero */}
    <section
+   
   className="relative h-screen bg-cover bg-center flex items-center justify-center transition-all duration-1000"
   style={{
     backgroundImage: `url(${images[currentImage]})`,
@@ -64,9 +65,9 @@ export default function Home() {
             elegance and better sleep.
           </p>
 
-          <button className="bg-[#D4AF37] text-black px-8 py-4 rounded-full font-semibold">
-            Shop Collection
-          </button>
+          <button className="bg-[#D4AF37] hover:scale-105 transition px-8 py-4 rounded-full text-black font-bold shadow-xl">
+  Shop Collection
+</button>
         </div>
       </section>
 
