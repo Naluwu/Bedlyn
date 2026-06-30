@@ -1,6 +1,7 @@
 "use client";
-
 import { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 export default function Home() {
   const images = [
@@ -202,7 +203,14 @@ export default function Home() {
         </div>
 
       </footer>
-
+<a
+  href="https://wa.me/256731326228?text=Hello%20Bedlyn,%20I'm%20interested%20in%20your%20bedding%20products."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
+>
+  <FaWhatsapp size={35} />
+</a>
     </main>
   );
 }
