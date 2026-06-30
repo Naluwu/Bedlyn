@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useCart } from "@/context/CartContext";
 import { FaWhatsapp } from "react-icons/fa";
-
 
 export default function Home() {
   const images = [
@@ -11,6 +11,8 @@ export default function Home() {
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
+
+  const { cart, addToCart } = useCart();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -37,12 +39,19 @@ export default function Home() {
   </p>
 </div>
 
-        <div className="flex gap-8">
+        <div className="flex gap-8 items-center">
   <a href="#">Home</a>
   <a href="#">Shop</a>
   <a href="#">Bedroom Packages</a>
   <a href="#">Hotel Collection</a>
   <a href="#">Contact</a>
+
+  <a
+    href="/cart"
+    className="bg-[#D4AF37] text-black px-4 py-2 rounded-full font-semibold"
+  >
+    Cart ({cart.length})
+  </a>
 </div>
       </nav>
 
@@ -65,9 +74,9 @@ export default function Home() {
             elegance and better sleep.
           </p>
 
-          <button className="bg-[#D4AF37] hover:scale-105 transition px-8 py-4 rounded-full text-black font-bold shadow-xl">
-  Shop Collection
-</button>
+          <button className="bg-[#D4AF37] text-black px-8 py-4 rounded-full font-semibold">
+            Shop Collection
+          </button>
         </div>
       </section>
 
