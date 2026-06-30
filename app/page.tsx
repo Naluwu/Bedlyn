@@ -47,12 +47,13 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <section
-        className="h-[85vh] bg-cover bg-center flex items-center justify-center transition-all duration-1000"
-        style={{
-          backgroundImage: `url(${images[currentImage]})`,
-        }}
-      >
+   <section
+  className="relative h-screen bg-cover bg-center flex items-center justify-center transition-all duration-1000"
+  style={{
+    backgroundImage: `url(${images[currentImage]})`,
+  }}
+>
+      
         <div className="bg-black/40 p-10 rounded-xl text-center text-white">
           <h1 className="text-6xl font-bold mb-6">
             Sleep Better. Live Better.
